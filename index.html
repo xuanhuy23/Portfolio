@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio cá nhân - Nhà phát triển web chuyên nghiệp với kinh nghiệm trong HTML, CSS, JavaScript và các framework hiện đại"
+    />
+    <meta
+      name="keywords"
+      content="portfolio, web developer, front-end, back-end, HTML, CSS, JavaScript, React"
+    />
+    <meta name="author" content="Lê Xuân Huy" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Portfolio Cá Nhân | Lê Xuân Huy" />
+    <meta
+      property="og:description"
+      content="Nhà phát triển web chuyên nghiệp với kinh nghiệm trong HTML, CSS, JavaScript và các framework hiện đại"
+    />
+    <meta property="og:image" content="assets/images/og-image.jpg" />
+    <meta property="og:url" content="https://your-portfolio-url.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Portfolio Cá Nhân | Lê Xuân Huy" />
+    <meta
+      name="twitter:description"
+      content="Nhà phát triển web chuyên nghiệp với kinh nghiệm trong HTML, CSS, JavaScript và các framework hiện đại"
+    />
+    <meta name="twitter:image" content="assets/images/og-image.jpg" />
+
+    <title>Portfolio Cá Nhân | Lê Xuân Huy</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/dark-mode.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">Chuyển đến nội dung chính</a>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav aria-label="Điều hướng chính">
+          <div class="logo" role="banner">
+            <a href="#" aria-label="Trang chủ">Portfolio</a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#home" aria-current="page">Trang chủ</a></li>
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#skills">Kỹ năng</a></li>
+            <li><a href="#projects">Dự án</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+          </ul>
+          <div class="nav-right">
+            <button id="dark-mode-toggle" aria-label="Chuyển đổi chế độ tối">
+              <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
+            <button
+              class="mobile-menu-btn"
+              aria-label="Mở menu di động"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Xin chào, tôi là <span class="highlight">Lê Xuân Huy</span></h1>
+            <h2>
+              Nhà phát triển web <span class="typing" aria-live="polite"></span>
+            </h2>
+            <p>
+              Tôi thiết kế và phát triển những trải nghiệm kỹ thuật số sáng tạo
+              và hiệu quả.
+            </p>
+            <div class="hero-btns">
+              <a href="#contact" class="btn primary-btn">Liên hệ</a>
+              <a href="#projects" class="btn secondary-btn">Xem dự án</a>
+            </div>
+            <div class="social-links" aria-label="Liên kết mạng xã hội">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="assets/images/avatar.jpg"
+              alt="Ảnh chân dung của Lê Xuân Huy"
+              width="400"
+              height="400"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <header class="section-header">
+            <h2>Giới thiệu</h2>
+            <p>Một vài điều về tôi</p>
+          </header>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                Xin chào! Tôi là Lê Xuân Huy, một nhà phát triển web đam mê với
+                CNTT Tôi chuyên về việc tạo ra các trang web responsive, thân
+                thiện với người dùng và hiệu suất cao.
+              </p>
+              <p>
+                Sứ mệnh của tôi là xây dựng các giải pháp kỹ thuật số đẹp mắt và
+                chức năng, giúp các doanh nghiệp và cá nhân đạt được mục tiêu
+                trực tuyến của họ.
+              </p>
+              <a href="#" class="btn primary-btn download-cv" download
+                >Tải xuống CV</a
+              >
+            </div>
+            <div class="about-details">
+              <div class="detail-item">
+                <h3>Học vấn</h3>
+                <ul>
+                  <li>
+                    <time class="year" datetime="2010-08/2025-12"
+                      >2020 - 2025</time
+                    >
+                    <h4>Kỹ sư CNTT</h4>
+                    <p>Trường Đại học Công nghiệp Việt Hung</p>
+                  </li>
+                  <li>
+                    <time class="year" datetime="2016-08/2018-06"
+                      >2016 - 2018</time
+                    >
+                    <h4>Học web trên các nền tảng như Youtube, Udemy</h4>
+                  </li>
+                </ul>
+              </div>
+              <div class="detail-item">
+                <h3>Kinh nghiệm</h3>
+                <ul>
+                  <li>
+                    <time class="year" datetime="2022-01/present"
+                      >2022 - Hiện tại</time
+                    >
+                    <h4>Web Developer</h4>
+                  </li>
+                  <li>
+                    <time class="year" datetime="2020-01/2022-01"
+                      >2020 - 2022</time
+                    >
+                    <h4>Web Designer</h4>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <header class="section-header">
+            <h2>Kỹ năng</h2>
+          </header>
+          <div class="skills-container">
+            <div class="skill-category">
+              <h3>Front-end</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fab fa-html5" aria-hidden="true"></i>
+                  </div>
+                  <h4>HTML5</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                  </div>
+                  <h4>CSS3</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fab fa-js" aria-hidden="true"></i>
+                  </div>
+                  <h4>JavaScript</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fab fa-react" aria-hidden="true"></i>
+                  </div>
+                  <h4>React</h4>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Back-end</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fab fa-node-js" aria-hidden="true"></i>
+                  </div>
+                  <h4>Node.js</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fas fa-database" aria-hidden="true"></i>
+                  </div>
+                  <h4>MongoDB</h4>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Công cụ</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fab fa-git-alt" aria-hidden="true"></i>
+                  </div>
+                  <h4>Git</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fab fa-figma" aria-hidden="true"></i>
+                  </div>
+                  <h4>Figma</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <header class="section-header">
+            <h2>Dự án</h2>
+          </header>
+          <div class="project-filters" role="tablist" aria-label="Bộ lọc dự án">
+            <button
+              class="filter-btn active"
+              data-filter="all"
+              role="tab"
+              aria-selected="true"
+              aria-controls="all-projects"
+            >
+              Tất cả
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="web"
+              role="tab"
+              aria-selected="false"
+              aria-controls="web-projects"
+            >
+              Web
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="mobile"
+              role="tab"
+              aria-selected="false"
+              aria-controls="mobile-projects"
+            >
+              Mobile
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="design"
+              role="tab"
+              aria-selected="false"
+              aria-controls="design-projects"
+            >
+              Thiết kế
+            </button>
+          </div>
+          <div class="projects-grid">
+            <article class="project-item" data-category="web">
+              <div class="project-img">
+                <img
+                  src="assets/images/project1.jpg"
+                  alt="Ảnh dự án website thương mại điện tử"
+                  width="400"
+                  height="250"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Xem trực tiếp dự án 1"
+                    >
+                      <i class="fas fa-eye" aria-hidden="true"></i>
+                    </a>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Xem mã nguồn dự án 1"
+                    >
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Dự án 1</h3>
+                <p>TỰ ĐỘNG LẤY DỮ LIỆU THỜI TIẾT THEO VỊ TRÍ</p>
+                <div class="project-tech">
+                  <span>Python</span>
+                  <span>SQLite</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-item" data-category="mobile">
+              <div class="project-img">
+                <img
+                  src="assets/images/project2.jpg"
+                  alt="Ảnh dự án ứng dụng di động"
+                  width="400"
+                  height="250"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Xem trực tiếp dự án 2"
+                    >
+                      <i class="fas fa-eye" aria-hidden="true"></i>
+                    </a>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Xem mã nguồn dự án 2"
+                    >
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Dự án 2</h3>
+                <p>LÀM SẠCH CSV</p>
+                <div class="project-tech">
+                  <span>Python</span>
+                  <span>Pandas</span>
+                </div>
+              </div>
+            </article>
+            <!-- Thêm dự án khác tại đây -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <header class="section-header">
+            <h2>Liên hệ</h2>
+          </header>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                </div>
+                <h3>Email</h3>
+                <p>
+                  <a href="mailto:example@email.com">huyle26122003@email.com</a>
+                </p>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-phone" aria-hidden="true"></i>
+                </div>
+                <h3>Điện thoại</h3>
+                <p><a href="tel:+84123456789">0326119638</a></p>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </div>
+                <h3>Địa chỉ</h3>
+                <p>Thành phố Hà Nội, Việt Nam</p>
+              </div>
+            </div>
+            <div class="contact-form">
+              <form id="contactForm" aria-label="Biểu mẫu liên hệ">
+                <div class="form-group">
+                  <label for="name" class="visually-hidden">Họ tên</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Họ tên"
+                    required
+                    aria-required="true"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="visually-hidden">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                    aria-required="true"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="subject" class="visually-hidden">Tiêu đề</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Tiêu đề"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message" class="visually-hidden">Tin nhắn</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Tin nhắn"
+                    required
+                    aria-required="true"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn">
+                  Gửi tin nhắn
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">Portfolio</div>
+          <div class="social-links" aria-label="Liên kết mạng xã hội">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <time datetime="2025">2025</time> Portfolio Cá Nhân. Đã đăng
+            ký bản quyền.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/darkMode.js"></script>
+
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </body>
+</html>

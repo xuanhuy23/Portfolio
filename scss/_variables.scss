@@ -1,0 +1,33 @@
+// SCSS Variables
+// Colors
+$primary-color: #5e3aee;
+$secondary-color: #ff6b6b;
+$text-color: #333;
+$text-color-light: #666;
+$bg-color: #fff;
+$bg-color-light: #f9f9f9;
+$border-color: #eaeaea;
+
+// Dark mode colors
+$dark-primary-color: #8a66ff;
+$dark-secondary-color: #ff8585;
+$dark-text-color: #e6e6e6;
+$dark-text-color-light: #b0b0b0;
+$dark-bg-color: #121212;
+$dark-bg-color-light: #1e1e1e;
+$dark-border-color: #333;
+
+// Dimensions
+$container-width-lg: 80%;
+$container-width-md: 90%;
+
+// Effects
+$transition: all 0.3s ease;
+$shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+$border-radius: 10px;
+
+// Breakpoints
+$breakpoint-lg: 1024px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 480px;

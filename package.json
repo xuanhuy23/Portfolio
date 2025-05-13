@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss css/styles.css",
+    "sass:watch": "sass --watch scss/main.scss:css/styles.css",
+    "dev": "sass --watch scss/main.scss:css/styles.css"
+  },
+  "keywords": [
+    "portfolio",
+    "personal",
+    "website",
+    "frontend"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}

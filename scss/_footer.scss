@@ -1,0 +1,32 @@
+// Footer styles
+footer {
+  background: #222;
+  color: white;
+  padding: 60px 0 20px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer {
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  &-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}

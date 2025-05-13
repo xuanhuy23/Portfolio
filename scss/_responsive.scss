@@ -1,0 +1,79 @@
+// Responsive styles
+@include responsive(lg) {
+  :root {
+    --container-width-lg: 90%;
+  }
+
+  .hero .container,
+  .about-content,
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include responsive(md) {
+  .nav-links {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: white;
+    @include flex($direction: column, $justify: center, $align: center);
+    gap: 40px;
+    transition: $transition;
+
+    &.active {
+      right: 0;
+    }
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@include responsive(sm) {
+  .hero-content {
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .hero-btns {
+    flex-direction: column;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+}

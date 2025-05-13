@@ -1,0 +1,85 @@
+// SCSS Placeholders (%)
+// Tạo các placeholders để tái sử dụng nhanh chóng các kiểu dáng thông qua @extend
+
+// Card style
+%card {
+  background: $bg-color;
+  border-radius: $border-radius;
+  overflow: hidden;
+  @include shadow(1);
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-5px);
+    @include shadow(2);
+  }
+}
+
+// Section padding
+%section-padding {
+  padding: 100px 0;
+
+  @include responsive(md) {
+    padding: 80px 0;
+  }
+
+  @include responsive(sm) {
+    padding: 60px 0;
+  }
+}
+
+// Flex center
+%flex-center {
+  @include flex();
+}
+
+// Anchor reset
+%anchor-reset {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Interactive element
+%interactive {
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+// List reset
+%list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// Heading style
+%heading {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+// Text truncate
+%text-truncate {
+  @include truncate(1);
+}
+
+// Multi-line truncate
+%text-truncate-2 {
+  @include truncate(2);
+}
+
+// Glass panel
+%glass-panel {
+  @include glass-effect(0.1, 8px);
+  border-radius: $border-radius;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}

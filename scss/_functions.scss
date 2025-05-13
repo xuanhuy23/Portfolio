@@ -1,0 +1,65 @@
+// SCSS Functions
+
+// Convert px to rem
+@function rem($pixels, $context: 16) {
+  @return calc($pixels / $context) * 1rem;
+}
+
+// Convert px to em
+@function em($pixels, $context: 16) {
+  @return calc($pixels / $context) * 1em;
+}
+
+// Lighten color by percentage
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+// Darken color by percentage
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+// Get contrasting text color based on background
+@function text-color($background) {
+  @if (lightness($background) > 50) {
+    @return $text-color; // Sử dụng màu tối cho nền sáng
+  } @else {
+    @return white; // Sử dụng màu sáng cho nền tối
+  }
+}
+
+// Calculate z-index
+@function z($layer) {
+  $layers: (
+    "modal": 9000,
+    "navbar": 8000,
+    "overlay": 7000,
+    "dropdown": 6000,
+    "default": 1,
+    "below": -1,
+  );
+
+  @if map-has-key($layers, $layer) {
+    @return map-get($layers, $layer);
+  }
+
+  @warn "Không tìm thấy layer '#{$layer}' trong z-index map.";
+  @return 1;
+}
+
+// Calculate letter-spacing
+@function letter-space($pixels) {
+  @return calc($pixels / 16) * 1em;
+}
+
+// Generate rgba color with alpha
+@function rgba-color($color, $alpha) {
+  @return rgba($color, $alpha);
+}
+
+// Calculate spacing with multiplier
+@function spacing($multiplier) {
+  $base-spacing: 8px;
+  @return $base-spacing * $multiplier;
+}

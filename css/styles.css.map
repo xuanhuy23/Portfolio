@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "file": "styles.css",
+  "sources": [
+    "../scss/main.scss",
+    "../scss/_variables.scss",
+    "../scss/_functions.scss",
+    "../scss/_mixins.scss",
+    "../scss/_placeholders.scss",
+    "../scss/_reset.scss",
+    "../scss/_buttons.scss",
+    "../scss/_header.scss",
+    "../scss/_sections.scss",
+    "../scss/_animations.scss",
+    "../scss/_footer.scss",
+    "../scss/_dark-mode.scss",
+    "../scss/_responsive.scss"
+  ],
+  "names": [],
+  "mappings": ""
+}

@@ -1,0 +1,83 @@
+// Animation styles
+
+// Fade-in animation
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Slide-in animation
+@keyframes slideIn {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+// Pulse animation for attention
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// Fade animation for hover effects
+.fade-hover {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+    transform: translateY(-5px);
+  }
+}
+
+// Animation classes that can be applied to elements
+.animate {
+  &-fade-in {
+    animation: fadeIn 0.8s ease forwards;
+  }
+
+  &-slide-in {
+    animation: slideIn 0.8s ease forwards;
+  }
+
+  &-pulse {
+    animation: pulse 2s infinite;
+  }
+}
+
+// Animation delays
+@for $i from 1 through 10 {
+  .delay-#{$i} {
+    animation-delay: #{$i * 0.1}s;
+  }
+}
+
+// Page transition effects
+.page-transition {
+  transition: opacity 0.5s ease;
+
+  &.exit {
+    opacity: 0;
+  }
+
+  &.enter {
+    opacity: 1;
+  }
+}

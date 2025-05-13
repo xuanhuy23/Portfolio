@@ -1,0 +1,55 @@
+// Dark mode styles
+body.dark-mode {
+  --primary-color: #{$dark-primary-color};
+  --secondary-color: #{$dark-secondary-color};
+  --text-color: #{$dark-text-color};
+  --text-color-light: #{$dark-text-color-light};
+  --bg-color: #{$dark-bg-color};
+  --bg-color-light: #{$dark-bg-color-light};
+  --border-color: #{$dark-border-color};
+  --shadow: #{$dark-shadow};
+
+  header {
+    background: rgba(18, 18, 18, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  #dark-mode-toggle {
+    color: var(--text-color);
+
+    i {
+      transform: rotate(180deg);
+    }
+  }
+
+  .nav-links a {
+    color: var(--text-color);
+  }
+
+  .mobile-menu-btn span {
+    background: var(--text-color);
+  }
+
+  .skill-item,
+  .project-info,
+  .contact-form,
+  .info-icon {
+    background: var(--bg-color-light);
+  }
+
+  .project-links {
+    a {
+      background: var(--bg-color-light);
+      color: var(--primary-color);
+
+      &:hover {
+        background: var(--secondary-color);
+        color: var(--bg-color);
+      }
+    }
+  }
+
+  footer {
+    background: #000;
+  }
+}

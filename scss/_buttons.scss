@@ -1,0 +1,53 @@
+// Button styles
+.btn {
+  display: inline-block;
+  padding: spacing(1.5) spacing(3.75);
+  border-radius: 50px;
+  font-weight: 500;
+  @extend %interactive;
+  border: none;
+}
+
+.primary-btn {
+  background: $primary-color;
+  color: white;
+
+  &:hover {
+    background: $primary-color;
+    box-shadow: 0 10px 20px rgba-color($primary-color, 0.3);
+    color: white;
+    transform: translateY(-3px);
+  }
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid $primary-color;
+  color: $primary-color;
+
+  &:hover {
+    background: $primary-color;
+    color: white;
+  }
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: spacing(7.5);
+
+  h2 {
+    font-size: rem(40);
+    @extend %heading;
+    position: relative;
+    margin-bottom: spacing(1.25);
+    color: $primary-color;
+  }
+
+  p {
+    color: $text-color-light;
+  }
+}
+
+.highlight {
+  color: $primary-color;
+}

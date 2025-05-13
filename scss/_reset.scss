@@ -1,0 +1,128 @@
+// Reset styles
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  color: $text-color;
+  background: $bg-color;
+  overflow-x: hidden;
+}
+
+a {
+  @extend %anchor-reset;
+  color: $primary-color;
+  transition: $transition;
+
+  &:hover {
+    color: $secondary-color;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+  }
+}
+
+button {
+  &:focus-visible {
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+  }
+}
+
+// Cải thiện trải nghiệm focus cho người dùng sử dụng bàn phím
+.keyboard-user *:focus {
+  outline: 2px solid $primary-color;
+  outline-offset: 2px;
+}
+
+// Ẩn outline cho người dùng sử dụng chuột
+body:not(.keyboard-user) *:focus {
+  outline: none;
+}
+
+ul {
+  @extend %list-reset;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+
+  // Thêm alt text nhìn rõ khi ảnh không tải được
+  &:not([alt]) {
+    border: 2px dashed $primary-color;
+  }
+}
+
+section {
+  @extend %section-padding;
+}
+
+.container {
+  width: $container-width-lg;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+// Cải thiện contrast ratio
+@media (prefers-contrast: more) {
+  body {
+    --primary-color: #{darken($primary-color, 10%)};
+    color: #000;
+    background: #fff;
+  }
+
+  a:not(.btn),
+  button:not(.btn) {
+    text-decoration: underline;
+  }
+}
+
+// Giảm animation khi người dùng yêu cầu
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.form-message {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+
+  &.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+  }
+
+  &.error {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+  }
+}
